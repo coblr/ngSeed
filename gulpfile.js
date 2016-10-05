@@ -117,7 +117,7 @@ gulp.task('test:features', ['build:features'], (done) => {
 ////////////
 
 gulp.task('clean', () => {
-    return del.sync(paths.build);
+    return del.sync([paths.build, './coverage']);
 });
 
 gulp.task('copy:assets', () => {
@@ -141,6 +141,12 @@ gulp.task('copy:vendor:css', () => {
         .pipe(strReplace(/\.\.\/fonts\/fontawesome/g, './fonts/fontawesome'))
         .pipe(concat('vendor.css'))
         .pipe(gulp.dest(paths.build));
+});
+
+gulp.task('bust', () => {
+    return gulp.src('./index.html')
+        .pipe(strReplace(/\?([\d]+)?\#?cacheBust/ig, `?${Date.now()}#cacheBust`))
+        .pipe(gulp.dest('./'));
 });
 
 ////////////

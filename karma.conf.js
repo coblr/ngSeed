@@ -24,8 +24,9 @@ module.exports = {
     },
     reporters: ['dots', 'coverage'],
     coverageReporter: {
-        type: 'html',
-        dir: 'build/coverage/'
+        type: 'lcov',
+        dir: './coverage',
+        subdir: '.'
     },
     singleRun: true,
     autoWatch: false,
