@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica;
+
+    // makes 1rem = 10px but reduces default font size
+    font-size: 62.5%;
+}
+
+body {
+    // makes default size ~= 16px again
+    font-size: 1.6rem;
+}

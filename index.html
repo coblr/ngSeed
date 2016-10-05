@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="ngSeed">
+    <head>
+        <title>ngSeed</title>
+        <link rel="stylesheet" type="text/css" href="./build/vendor.css" />
+        <link rel="stylesheet" type="text/css" href="./build/core.css" />
+    </head>
+    <body ng-cloak keyboard-shortcuts>
+        <header>
+            <app-header></app-header>
+            <sticky-header threshold="100"></sticky-header>
+        </header>
+        <section>
+            <div>
+                <a ui-sref="dashboard">Dashboard</a>
+                <a ui-sref="details">Details</a>
+            </div>
+            <ui-view></ui-view>
+        </section>
+    </body>
+    <script src="./build/vendor.js?1474481412471#cacheBust"></script>
+    <script src="./build/core.js?1474481412471#cacheBust"></script>
+    <script src="./build/common.js?1474481412471#cacheBust"></script>
+    <script src="./build/common.tpls.js?1474481412471#cacheBust"></script>
+    <script src="./build/dashboard.js?1474481412471#cacheBust"></script>
+    <script src="./build/dashboard.tpls.js?1474481412471#cacheBust"></script>
+    <script src="./build/details.js?1474481412471#cacheBust"></script>
+    <script src="./build/details.tpls.js?1474481412471#cacheBust"></script>
+</html>

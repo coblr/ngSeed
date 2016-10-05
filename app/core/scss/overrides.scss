@@ -1,0 +1,4 @@
+/*remove the focused element outline in chrome*/
+*:focus {
+    outline: none !important;
+}

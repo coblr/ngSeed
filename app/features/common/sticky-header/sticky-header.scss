@@ -1,0 +1,33 @@
+@import 'app.colors';
+
+sticky-header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+    #appHeader {
+        position: fixed !important;
+        top: 0;
+        padding: 0 10px;
+        transition: all linear 0.3s;
+        height: 50px;
+        min-height: 50px;
+        border-width: 3px;
+        width: 100%;
+
+        &.ng-hide {
+            display: block !important;
+            top: -300px;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+        }
+    }
+
+}
