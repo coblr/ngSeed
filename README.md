@@ -1,3 +1,8 @@
+
+[![Build Status](https://travis-ci.org/coblr/ngSeed.svg?branch=master)](https://travis-ci.org/coblr/ngSeed)
+
+[![Coverage Status](https://coveralls.io/repos/github/coblr/ngSeed/badge.svg?branch=master)](https://coveralls.io/github/coblr/ngSeed?branch=master)
+
 ### Installation
 
 Make sure you have Node and NPM installed.
