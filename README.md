@@ -1,7 +1,19 @@
+## ngSeed
 
 [![Build Status](https://travis-ci.org/coblr/ngSeed.svg?branch=master)](https://travis-ci.org/coblr/ngSeed)
-
 [![Coverage Status](https://coveralls.io/repos/github/coblr/ngSeed/badge.svg?branch=master)](https://coveralls.io/github/coblr/ngSeed?branch=master)
+
+I needed a seed project that had all the libraries and frameworks already installed and configured to work. Once this application is downloaded and installed, sections and features can be added as easy as just adding the files themselves. Gulp will pick up any new files and automatically incorporate them into the build. Unit testing is already set up, you just need to write the `.spec.js` files to accompany your application code. End-to-end testing is also set up so you just need to add `.e2e.js` files for your sections.
+
+See [Getting Started](https://github.com/coblr/ngSeed/wiki/Getting-Started) for more information on how to start growing this seed.
+
+Features:
+ - Builds with GulpJS
+ - Unit tests with Karma and Jasmine
+ - E2E tests with Protractor
+ - Transpiles with BabelJS
+ - Written in Angular 1.x
+ - Angular Material based UI
 
 ### Installation
 
