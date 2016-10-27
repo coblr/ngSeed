@@ -16,9 +16,7 @@
             }
             else {
                 for(let a in input){
-                    if(input.hasOwnProperty(a)){
-                        return false;
-                    }
+                    return !input.hasOwnProperty(a);
                 }
                 return true;
             }

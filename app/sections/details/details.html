@@ -1,3 +1,12 @@
 <section id="details">
+    <p>This is the Details section.</p>
+    <p>
+        <span ng-repeat="a in [2,3,4,5]">
+            <a
+                ui-sref="details.{{a}}">
+                View {{a}}
+            </a> | 
+        </span>
+    </p>
     <ui-view></ui-view>
 </section>

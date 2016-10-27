@@ -17,7 +17,7 @@
         ////////////
 
         function activate(){
-            for(let a=0; a<20; a++){
+            for(let a=0; a<200; a++){
                 vm.list.push(`box${a}`);
             }
         }

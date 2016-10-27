@@ -24,7 +24,7 @@ describe('IsEmpty Filter', () => {
     it('can detect if a string is empty', () => {
         expect(filter('')).toBe(true);
         expect(filter('as')).toBe(false);
-    })
+    });
 
     it('also says falsy is empty', () => {
         expect(filter(null)).toBe(true);

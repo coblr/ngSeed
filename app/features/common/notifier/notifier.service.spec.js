@@ -31,6 +31,11 @@ describe('Notifier Service', function(){
         expect(notifierService.notices[0]).toEqual({key: 'mock', text: 456});
     });
 
+    it('ignores removal by invalid index', () => {
+        notifierService.removeNoticeByIndex('a');
+        expect(notifierService.notices.length).toBe(2);
+    });
+
     it('can remove an error by checking equality', () => {
         notifierService.removeNoticeByEq(notifierService.notices[0]);
         expect(notifierService.notices.length).toBe(1);
@@ -46,6 +51,11 @@ describe('Notifier Service', function(){
     it('can remove an error by key', () => {
         notifierService.removeNoticeByKey('mock');
         expect(notifierService.notices.length).toBe(0);
+    });
+
+    it('ignores removal by invalid key', () => {
+        notifierService.removeNoticeByKey('foo');
+        expect(notifierService.notices.length).toBe(2);
     });
 
 });

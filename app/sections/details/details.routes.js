@@ -11,7 +11,7 @@
         $stateProvider
             .state('details', {
                 url: '/details',
-                templateUrl: './app/sections/details/details.html',
+                templateUrl: 'sections/details/details.html',
                 controller: 'detailsController',
                 controllerAs: 'details',
                 data: {
@@ -19,6 +19,20 @@
                     title: 'Details'
                 }
             });
+
+
+        for(let a=2; a<=5; a++){
+            $stateProvider.state('details.' + a, {
+                url: '/details/' + a,
+                template: `<div>A different view (${a})</div>`,
+                controller: 'detailsController',
+                controllerAs: 'details',
+                data: {
+                    css: ['common.css', 'details.css'],
+                    title: 'Details'
+                }
+            });
+        }
     }
 
 })();

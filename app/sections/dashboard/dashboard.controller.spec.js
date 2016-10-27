@@ -18,6 +18,6 @@ describe('Dashboard Controller', () => {
     ////////////
 
     it('should have a list of stuff to display', () => {
-        expect(vm.list.length).toBe(20);
+        expect(vm.list.length).toBe(200);
     });
 });

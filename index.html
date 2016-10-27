@@ -5,18 +5,20 @@
         <link rel="stylesheet" type="text/css" href="./build/vendor.css" />
         <link rel="stylesheet" type="text/css" href="./build/core.css" />
     </head>
-    <body ng-cloak keyboard-shortcuts>
+    <body layout="column" layout-align="none stretch">
         <header>
             <app-header></app-header>
             <sticky-header threshold="100"></sticky-header>
         </header>
-        <section>
-            <div>
-                <a ui-sref="dashboard">Dashboard</a>
-                <a ui-sref="details">Details</a>
-            </div>
+        <nav
+            class="navbar"
+            layout-padding>
+            <a ui-sref="dashboard">Dashboard</a>
+            <a ui-sref="details">Details</a>
+        </nav>
+        <md-content layout-padding>
             <ui-view></ui-view>
-        </section>
+        <md-content>
     </body>
     <script src="./build/vendor.js?1474481412471#cacheBust"></script>
     <script src="./build/core.js?1474481412471#cacheBust"></script>

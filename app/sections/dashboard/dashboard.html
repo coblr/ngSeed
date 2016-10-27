@@ -1,7 +1,8 @@
 <section id="dashboard">
-    <ui-view>
-        <div ng-repeat="name in dashboard.list track by name">
-            {{name}}
-        </div>
-    </ui-view>
+    <p>This is the Dashboard section.</p>
+    <ul>
+        <li ng-repeat="item in dashboard.list">
+            {{item}}
+        </li>
+    </ul>
 </section>

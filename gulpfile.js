@@ -99,7 +99,7 @@ gulp.task('watch:features', featureWatchTasks);
 ////////////
 
 gulp.task('test', ['build'], (done) => {
-    const everything = extend({app:`${paths.app}core`}, paths.features, paths.sections);
+    const everything = extend(paths.features, paths.sections);
     const config = getTestConfig(everything);
     new karmaServer(config, done).start();
 });
